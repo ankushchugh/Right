@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+﻿<!DOCTYPE html> 
 <html lang="en"> 
 <head> 
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
@@ -12,7 +12,7 @@
 	<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
 	
 	<!-- color scheme -->
-	<link rel="stylesheet" type="text/css" href="color-schemes/orange/orange.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="color-schemes/blue/blue.css" media="screen" />
 	
 	<!--miscellaneous-->
 	<link rel="stylesheet" type="text/css" href="css/superfish.css" media="screen" />
@@ -30,7 +30,7 @@
 	
 	<!-- Google Web Fonts -->
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800' rel='stylesheet' type='text/css'>	
-	
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
 	<!-- jQuery -->
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>	
 	
@@ -38,6 +38,7 @@
 	<script type="text/javascript" src="js/modernizr.js"></script>		
 	<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>	
 	<script type="text/javascript" src="js/jquery.parallax.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
 
 </head> 
 
@@ -97,60 +98,14 @@
 	<div class="menu-fixer"></div>
 	
 		<div class="fullscreenbanner-container">
-			<div class="fullscreenbanner">
-				<ul>
-					
-					<!-- THE FIRST SLIDE -->
-					<li data-transition="fade" data-slotamount="15" data-masterspeed="300">
-						<img src="images/slides/slide33.jpg" alt="" />
-						
-						<!-- THE CAPTIONS IN THIS SLIDE -->
-						<div class="caption tp-resizeme big-text lft ltt"  
-							 data-x="center" 
-							 data-y="center" 
-							 data-speed="300" 
-							 data-start="500" 
-							 data-easing="easeOutExpo">
-								<h1>We Are Patti Studio</h1>
-								<div class="fancy-caption" style="width: 365px">
-									<div class="fancy-slider-info">Since 2008</div>
-									<div class="fancy-slider-caption">Serving Web Design</div>
-								</div>
-						</div>								
-					</li>	
-					
-					<!-- THE SECOND SLIDE -->
-					<li data-transition="slidedown" data-slotamount="15" data-masterspeed="300">
-						<img src="images/slides/slide11.jpg" alt="" />
-						
-						<div class="caption tp-resizeme big-text lft ltt"  
-							 data-x="center" 
-							 data-y="center" 
-							 data-speed="300" 
-							 data-start="500" 
-							 data-easing="easeOutExpo"><h1>It All Starts with a Vision</h1></div>
-									
-					</li>
-					
-					<!-- THE THIRD SLIDE -->
-					<li data-transition="fade" data-slotamount="15" data-masterspeed="300">						
-						<img src="images/slides/slide22.jpg" alt="" />
-																
-						<!-- THE CAPTIONS IN THIS SLDIE -->
-						<div class="caption tp-resizeme big-text lft ltt"  
-							 data-x="center" 
-							 data-y="center" 
-							 data-speed="300" 
-							 data-start="500" 
-							 data-easing="easeOutExpo"><h1>We Just Love What We Do</h1></div>
-									
-					</li>				
-		
-				</ul>
-				<!-- Slider Timer Banner-->
-				<!--<div class="tp-bannertimer"></div>-->
-				
-			</div>	
+			<div class="fullscreenbanner" style="background-image:url(images/slides/slide11.jpg)">
+                <div id="searchCategory"  >
+    <form class="search-form" method="get" action="" >
+        <input type="text"  style="background-color:white;" placeholder="Search..." id="searchTextBox" name="s" value="" />
+        <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+</div>
+</div>	
 		</div>
 
 	</section>	
@@ -845,9 +800,7 @@
 		</div>
 	</section>
 	
-	<!-- GOOGLE MAP CONTROLS -->
-	<a class="button-map close-map"><span>Locate Us on Map</span></a>
-	<div id="google_map"></div>
+	
 	
 	<footer id="footer">		
 		<div id="bottomfooter">		
@@ -900,9 +853,6 @@
 	<script type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
 	<script type="text/javascript" src="js/custom-revolution.js"></script>
 	
-	<!-- GOOGLE MAPS -->
-	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>		
-	<script type="text/javascript" src="js/custom-map.js"></script>
 	
 	<!-- CUSTOM -->
 	<script type="text/javascript" src="js/custom.js"></script>

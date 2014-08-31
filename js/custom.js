@@ -289,7 +289,19 @@ function pattiservices() {
 	});
 }
 
+//Auto complete search box
+function autofillSearchbox() {
+    var availableCategories = [
+                 "Photography",
+                 "Bike Services",
+                 "Electrician",
+                 "Plumber",
+    ];
+    $("#searchTextBox").autocomplete({
+        source: availableCategories
+       });
 
+}
 
 // Blog Gallery Slider
 function gallery_slider() {
@@ -319,6 +331,7 @@ $(document).ready(function() {
 	pattitabs();
 	toggles();
 	pattiskills();
+	autofillSearchbox();
 	
 	
 	
