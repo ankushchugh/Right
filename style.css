@@ -872,12 +872,23 @@ textarea {
 	float: left;
 }
 
+#logoplaceholder {
+position: relative;
+	margin-right: 2%;
+	float: left;
+}
+
 .column-right {
 	float:right;
 }
 .column-last {
 	margin-right: 0!important;
 	clear: right;
+}
+
+#menubar {
+    margin-right: 0!important;
+	
 }
 
 .bold-style {
@@ -1110,7 +1121,7 @@ blockquote {
 }
 
 #navigation {
-	float:right;
+	float:left;
 	position:relative;
 	z-index:10000;
 }
