@@ -333,14 +333,18 @@ $(document).ready(function() {
 	pattiskills();
 	autofillSearchbox();
 	
+    
 	
 	
 	// Header Effect on Scroll
 	$(window).scroll( function() {
-			var value = $(this).scrollTop();
-			if ( value > 120 )	{
-				$("#header").addClass("scrolled-header");
-				$("#header").css({"padding-top": "15px", "padding-bottom": "15px"});
+	    var value = $(this).scrollTop();
+	    
+			if (value > 120) {
+			    
+			    $("#header").addClass("scrolled-header");
+
+				$("#header").css({"padding-top": "55px", "padding-bottom": "15px"});
 				$(".scrolled-header").css({"background":"rgba(255,255,255,0.95)", "box-shadow": "0px 0px 3px rgba(0, 0, 0, 0.3)"});
 				$(".no-rgba .scrolled-header").css({"background": "url(images/no-rgba-white.png) repeat scroll 0 0"});
 				$(".logo img").css({"height": "30px", "width": "auto"});
@@ -350,7 +354,9 @@ $(document).ready(function() {
 				
 				$("#header.no-header").addClass("show");
 				
-				$(".no-csstransforms .no-header").css({"display": "block"});
+				$(".no-csstransforms .no-header").css({ "display": "block" });
+				
+				
 			
 			}
 			else {

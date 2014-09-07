@@ -21,6 +21,7 @@
 	<link rel="stylesheet" type="text/css" href="css/audioplayer.css" media="screen" />	
 	<link rel="stylesheet" type="text/css" href="css/owl.carousel.css" media="screen" />	
 	<link rel="stylesheet" type="text/css" href="css/animate.css" media="screen" />	
+
 	
 	<!-- revolution slider settings -->
 	<link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" media="screen" />		
@@ -29,16 +30,16 @@
 	<link rel="stylesheet" type="text/css" href="css/responsive.css" media="screen" />			
 	
 	<!-- Google Web Fonts -->
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800' rel='stylesheet' type='text/css'>	
+	<link href='css/googlefonts.css' rel='stylesheet' type='text/css'>	
     <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
 	<!-- jQuery -->
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>	
+	<script type="text/javascript" src="js/jquery.min.js"></script>	
 	
 	<!-- jQuery Scripts -->
 	<script type="text/javascript" src="js/modernizr.js"></script>		
 	<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>	
 	<script type="text/javascript" src="js/jquery.parallax.js"></script>
-    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
 
 </head> 
 
@@ -60,13 +61,14 @@
 			<div class="percent-three-fourth" id="menubar">					
 				<nav id="navigation">
 					<ul id="mainnav" class="sf-menu">
-						<li class="current"><a href="index.html/#hello"><span>HELLO</span></a></li>
+						<li class="current"><a href="index.html/#hello"><span>Home</span></a></li>
+                        <li><a href="index.html#services"><span>SERVICES</span></a></li>
 						<li><a href="index.html#about"><span>ABOUT</span></a></li>
-						<li><a href="index.html#work"><span>WORK</span></a></li>						
-						<li><a href="index.html#services"><span>SERVICES</span></a></li>
-						<li><a href="index.html#blog"><span>JOURNAL</span></a></li>
-						<li><a href="#extra"><span>EXTRA</span></a>
-							<ul>
+                        <li><a href="index.html#twitter"><span>JOURNAL</span></a></li>
+						<!--<li><a href="index.html#work"><span>WORK</span></a></li>-->
+                        <li><a href="index.html#team"><span>Our Team</span></a></li>						
+						<li><a href="index.html#work"><span>EXTRA</span></a>
+							<!--<ul>
 								<li><a class="external" href="elements.html">Elements</a></li>							
 								<li><a class="external" href="portfolio-item-1.html">Portfolio Item 1</a></li>							
 								<li><a class="external" href="portfolio-item-2.html">Portfolio Item 2</a></li>							
@@ -78,14 +80,20 @@
 								<li><a class="external" href="blog-masonry-2-columns-sidebar.html">Blog - Masonry 2 Cols + Sidebar</a></li>
 								<li><a class="external" href="blog.html">Blog - Regular Layout</a></li>
 								<li><a class="external" href="blog-single.html">Blog - Single</a></li>
-							</ul>
+							</ul>-->
 						</li>							
 						<li><a href="index.html#contact"><span>CONTACT</span></a></li>
 					</ul>
 				</nav><!--end navigation-->
+                
 			</div><!--end three-fourth-->
+            <span class="login">
+                <input type="button" name="login" value="Login" id="login" class="button black" />
+                <input type="button" name="signup" value="Sign Up" id="signup" class="button black" />
+            </span>
 			<div class="clear"></div>			
 		</div><!--end centered-wrapper-->
+       
 	</header>	
 	
 <div id="wrapper">
@@ -99,9 +107,11 @@
 	
 		<div class="fullscreenbanner-container">
 			<div class="fullscreenbanner" style="background-image:url(images/slides/slide11.jpg)">
+
                 <div id="searchCategory"  >
+                    <h1 id="captionlabel" class="big-text">Search for Professionals..</h1>
     <form class="search-form" method="get" action="" >
-        <input type="text"  style="background-color:white;" placeholder="Search..." id="searchTextBox" name="s" value="" />
+        <input type="text" style="background-color:white;" placeholder="Carpenter, AC repair, Tailor..." id="searchTextBox" name="s" value="" />
         <button type="submit"><i class="fa fa-search"></i></button>
     </form>
 </div>
@@ -110,7 +120,96 @@
 
 	</section>	
 	
-	
+    <!-- SERVICES SECTION -->
+    <section class="parallax-section" id="services">
+        <div class="lighter-overlay">
+
+            <section class="centered-wrapper">
+
+                <div class="double-space"></div>
+
+                <h1 class="section-title">Services</h1>
+
+                <div class="space"></div>
+
+                <ul class="homepage-services box fadeInUp">
+                    <li class="dt-service-wrapper percent-one-fifth">
+                        <div class="dt-service-item">
+                            <i class="fa fa-microphone"></i>
+                            <h3 class="service-title">Social Media</h3>
+                        </div>
+                        <div class="dt-service-hover">
+                            <!--<i class="fa fa-microphone"></i>-->
+                            <!--<h3>Social Media</h3>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                            <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>-->
+                            <!--<ol style="background-color:#21748C;opacity:0.6;padding:8px"><li style="padding-left:15px;font-size:14px;font-weight:bold">HEY</li></ol>-->
+                            <ul data-role="listview">
+                                <li><a href="acura.html">Acura</a></li>
+                                <li><a href="audi.html">Audi</a></li>
+                                <li><a href="bmw.html">BMW</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="dt-service-wrapper percent-one-fifth">
+                        <div class="dt-service-item">
+                            <i class="fa fa-cogs"></i>
+                            <h3 class="service-title">Clean Code</h3>
+                        </div>
+                        <div class="dt-service-hover">
+                            <i class="fa fa-cogs"></i>
+                            <h3>Clean Code</h3>
+                            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </p>
+                            <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.</p>
+                        </div>
+                    </li>
+
+                    <li class="dt-service-wrapper percent-one-fifth">
+                        <div class="dt-service-item">
+                            <i class="fa fa-camera-retro"></i>
+                            <h3 class="service-title">Photography</h3>
+                        </div>
+                        <div class="dt-service-hover">
+                            <i class="fa fa-camera-retro"></i>
+                            <h3>Photography</h3>
+                            <p>Consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam.</p>
+                            <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.</p>
+                        </div>
+                    </li>
+
+                    <li class="dt-service-wrapper percent-one-fifth">
+                        <div class="dt-service-item">
+                            <i class="fa fa-pencil-square-o"></i>
+                            <h3 class="service-title">Copywriting</h3>
+                        </div>
+                        <div class="dt-service-hover">
+                            <i class="fa fa-pencil-square-o"></i>
+                            <h3>Copywriting</h3>
+                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum.</p>
+                            <p>Deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
+                        </div>
+                    </li>
+
+                    <li class="dt-service-wrapper percent-one-fifth column-last">
+                        <div class="dt-service-item">
+                            <i class="fa fa-clock-o"></i>
+                            <h3 class="service-title">Fast Delivery</h3>
+                        </div>
+                        <div class="dt-service-hover">
+                            <i class="fa fa-clock-o"></i>
+                            <h3>Fast Delivery</h3>
+                            <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.</p>
+                            <p>Vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.</p>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="double-space"></div>
+
+            </section>
+        </div>
+    </section>
 	
 	<!-- ABOUT SECTION -->
 	
@@ -141,13 +240,13 @@
 			
 			<div class="separator"></div>
 			
-			<div class="percent-two-third box fadeInDown">
+			<!--<div class="percent-two-third box fadeInDown">
 				<h2 class="bold-style">ABOUT US</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas diam sapien, auctor sed blandit nec, adipiscing eget elit. Duis tempor elementum quam consequat condimentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.Praesent volutpat nisl fringilla felis sodales elementum. Ut commodo arcu massa.</p>
 				<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus...</p>
-			</div>
+			</div>-->
 			
-			<div class="percent-one-third column-last">
+			<!--<div class="percent-one-third column-last">
 				<div class="skillbar clearfix" data-percent="65%">
 					<div class="skillbar-title"><span>HTML5</span></div>
 					<div class="skillbar-bar"></div>
@@ -165,12 +264,63 @@
 					<div class="skillbar-bar"></div>
 					<div class="skill-bar-percent">95%</div>
 				</div>		
-			</div>
+			</div>-->
 			
-			<div class="double-space"></div>
+			<!--<div class="double-space"></div>-->
 		</div>
 		
 	</section>
+
+    <!-- TWITTER SECTION -->
+    <section class="parallax-section" id="twitter">
+        <div class="darker-overlay">
+            <section class="centered-wrapper">
+                <div class="double-space"></div>
+
+                <h1 class="section-title"><i class="fa fa-twitter"></i></h1>
+                <div class="half-space"></div>
+
+                <div class="twitter-carousel box fadeInDown">
+                    <!-- very important -->
+                    <div class="tweet"></div>
+                </div><!--end twitter-carousel-->
+
+                <div class="double-space"></div>
+            </section>
+        </div>
+
+    </section>
+
+
+    <!-- TESTIMONIALS SECTION -->
+    <section id="testimonials" class="clear">
+        <section class="centered-wrapper">
+            <div class="double-space"></div>
+
+            <h1 class="section-title">Testimonials</h1>
+            <div class="space"></div>
+
+            <div class="testimonials-carousel">
+                <div id="owl-testimonials" class="owl-carousel box fadeInDown">
+                    <div class="testimonial-item">
+                        <p>“I had the best <a href="#">collaboration ever</a>. I`m very excited about the way that my new website looks. And all because of the awesome guys from Patti Studio.”</p>
+                        <p><span class="testimonial-name">JOHN DOE</span>, <span class="testimonial-position">Company CEO</span></p>
+                    </div>
+                    <div class="testimonial-item">
+                        <p>We have been very much impressed by Patti Studio. They grasped our needs and produced a stunning design. Needless to say we are extremely satisfied with the results. Thank you!”</p>
+                        <p><span class="testimonial-name">ELENA GONZALES</span>, <span class="testimonial-position">Envato Team</span></p>
+                    </div>
+                    <div class="testimonial-item">
+                        <p>The work they made impressed me on multiple levels. I have been very happy about the whole process and they have done a great job. They was fast to deliver new ideas and always helpful with our questions!”</p>
+                        <p><span class="testimonial-name">RICHARD BRENNAN</span>, <span class="testimonial-position">Linda Marketing Team</span></p>
+                    </div>
+                </div>
+            </div><!--end carousel-->
+            <div class="double-space"></div>
+        </section>
+    </section>
+
+    <!--TEAM SECTION-->
 	
 	<section id="team">	
 		
@@ -246,10 +396,183 @@
 		</div>
 	</section><!--end centered-wrapper-->
 	
-	
+    <!-- WORK SECTION -->
+    <section id="work">
+
+        <!--<div class="double-space"></div>
+
+        <h1 class="section-title box fadeInDown">Our Work</h1>
+
+        <div class="space"></div>-->
+
+        <!--<section id="options">
+            <ul id="filters" class="option-set clearfix" data-option-key="filter">
+                <li><a href="#filter" data-option-value="*" class="selected active">All</a></li>
+                <li><a href="#filter" data-option-value=".marketing">Marketing</a></li>
+                <li><a href="#filter" data-option-value=".photography">Photography</a></li>
+                <li><a href="#filter" data-option-value=".01">Media</a></li>
+                <li><a href="#filter" data-option-value=".print">Print</a></li>
+                <li><a href="#filter" data-option-value=".webdesign">Web Design</a></li>
+            </ul>
+        </section>-->
+
+        <!--<div class="space"></div>-->
+
+        <!--<ul class="portfolio grid box fadeInUp">
+            <li class="grid-item print photography item-small">
+                <a href="portfolio-item-1.html">
+                    <div class="grid-item-on-hover">
+                        <div class="grid-text">
+                            <h1>L.A.P.D. 1947</h1>
+                        </div>
+                        <span>photography, printing identity</span>
+
+                    </div>
+                    <img src="images/portfolio/thumbnail-small.jpg" alt=" " />
+                </a>
+            </li>
+            <li class="grid-item item-small">
+                <a href="portfolio-item-2.html">
+                    <div class="grid-item-on-hover">
+                        <div class="grid-text">
+                            <h1>Outdoor Photoshoot</h1>
+                        </div>
+                        <span>photography, media</span>
+                    </div>
+                    <img src="images/portfolio/thumbnail-small-2.jpg" alt=" " />
+                </a>
+            </li>
+            <li class="grid-item marketing webdesign item-wide">
+                <a href="portfolio-item-3.html">
+                    <div class="grid-item-on-hover">
+                        <div class="grid-text">
+                            <h1>Nex7 Workspace</h1>
+                        </div>
+                        <span>web design, tech</span>
+                    </div>
+                    <img src="images/portfolio/thumbnail.jpg" alt=" " />
+                </a>
+            </li>
+            <li class="grid-item 01 item-high">
+                <a href="http://vimeo.com/22439234" title="Timelapse" rel="prettyPhoto">
+                    <div class="grid-item-on-hover">
+                        <div class="grid-text">
+                            <h1>Sea Side Store</h1>
+                        </div>
+                        <span>retail, marketing</span>
+                    </div>
+                    <img src="images/portfolio/thumbnail-high.jpg" alt=" " />
+                </a>
+            </li>
+            <li class="grid-item 01 marketing print item-long">
+                <a href="images/portfolio/its-summer-time.jpg" title="It`s Summer Time" rel="prettyPhoto[pp_gal]">
+                    <div class="grid-item-on-hover">
+                        <div class="grid-text">
+                            <h1>It`s Summer Time</h1>
+                        </div>
+                        <span>Marketing, Print</span>
+                    </div>
+                    <img src="images/portfolio/thumbnail-long.jpg" alt="" />
+                </a>
+            </li>
+
+            <li class="grid-item webdesign marketing print item-small">
+                <a href="images/portfolio/time-is-nothing.jpg" title="Time is Nothing" rel="prettyPhoto[pp_gal]">
+                    <div class="grid-item-on-hover">
+                        <div class="grid-text">
+                            <h1>Time is Nothing</h1>
+                        </div>
+                        <span>photography</span>
+                    </div>
+                    <img src="images/portfolio/thumbnail-small-3.jpg" alt="" />
+                </a>
+            </li>
+
+            <li class="grid-item webdesign marketing print item-wide">
+                <a href="images/portfolio/childhood-memories.jpg" title="Childhood Memories - Project for a Soul" rel="prettyPhoto[pp_gal]">
+                    <div class="grid-item-on-hover">
+                        <div class="grid-text">
+                            <h1>Childhood Memories</h1>
+                        </div>
+                        <span>media, print</span>
+                    </div>
+                    <img src="images/portfolio/thumbnail-2.jpg" alt="" />
+                </a>
+            </li>
+            <li class="grid-item photography item-long">
+                <a href="images/portfolio/maybe-one-day-fashion.jpg" title="Photoshoot for a Fashion Store" rel="prettyPhoto[pp_gal]">
+                    <div class="grid-item-on-hover">
+                        <div class="grid-text">
+                            <h1>Maybe One Day Fashion</h1>
+                        </div>
+                        <span>photography</span>
+                    </div>
+                    <img src="images/portfolio/thumbnail-long-2.jpg" alt="" />
+                </a>
+            </li>
+
+            <li class="grid-item 01 item-long">
+                <a href="portfolio-item-4.html">
+                    <div class="grid-item-on-hover">
+                        <div class="grid-text">
+                            <h1>Gibson Guitars </h1>
+                        </div>
+                        <span>branding, business cards</span>
+                    </div>
+                    <img src="images/portfolio/thumbnail-long-3.jpg" alt="" />
+                </a>
+            </li>
+
+            <li class="grid-item item-small">
+                <a href="portfolio-item-5.html">
+                    <div class="grid-item-on-hover">
+                        <div class="grid-text">
+                            <h1>Focus Lab</h1>
+                        </div>
+                        <span>photography, branding</span>
+                    </div>
+                    <img src="images/portfolio/thumbnail-small-4.jpg" alt="" />
+                </a>
+            </li>
+        </ul>
+
+        <div class="double-space"></div>-->
+
+
+        <h1 class="section-title">Some Fun Facts</h1>
+
+        <div class="space"></div>
+
+        <div class="counter-wrapper centered-wrapper box fadeInUp">
+            <div class="counter-item">
+                <span class="counter-number" data-from="1" data-to="134" data-speed="2000">134</span>
+                <span class="counter-text">Cups of Coffee</span>
+            </div>
+
+            <div class="counter-item">
+                <span class="counter-number" data-from="1" data-to="75" data-speed="2000">75</span>
+                <span class="counter-text">Projects Delivered</span>
+            </div>
+
+            <div class="counter-item">
+                <span class="counter-number" data-from="1" data-to="28" data-speed="2000">48</span>
+                <span class="counter-text">Satisfied Clients</span>
+            </div>
+
+            <div class="counter-item">
+                <span class="counter-number" data-from="1" data-to="12" data-speed="2000">12</span>
+                <span class="counter-text">Winning Awards</span>
+            </div>
+        </div>
+
+        <div class="clear"></div>
+        <div class="double-space"></div>
+
+    </section>
+
 	
 	<!-- QUOTE SECTION -->
-	<section class="parallax-section" id="quote">
+	<!--<section class="parallax-section" id="quote">
 		<div class="darker-overlay">	
 			<section class="centered-wrapper">
 				<div class="double-space"></div>
@@ -260,272 +583,17 @@
 				<div class="double-space"></div>
 			</section>	
 		</div>
-	</section>		
+	</section>-->		
 	
 	
-	<!-- WORK SECTION -->
-	<section id="work">	
-	
-		<div class="double-space"></div>
-		
-		<h1 class="section-title box fadeInDown">Our Work</h1>
-		
-		<div class="space"></div>
-		
-		<section id="options">
-			<ul id="filters" class="option-set clearfix" data-option-key="filter">
-				<li><a href="#filter" data-option-value="*" class="selected active">All</a></li>
-				<li><a href="#filter" data-option-value=".marketing">Marketing</a></li>
-				<li><a href="#filter" data-option-value=".photography">Photography</a></li>
-				<li><a href="#filter" data-option-value=".01">Media</a></li>
-				<li><a href="#filter" data-option-value=".print">Print</a></li>
-				<li><a href="#filter" data-option-value=".webdesign">Web Design</a></li>
-			</ul>			
-		</section>		
-		
-		<div class="space"></div>	
-
-		<ul class="portfolio grid box fadeInUp">
-			<li class="grid-item print photography item-small">
-				<a href="portfolio-item-1.html">
-					<div class="grid-item-on-hover">
-						<div class="grid-text">
-							<h1>L.A.P.D. 1947</h1>
-						</div>
-						<span>photography, printing identity</span>
-						
-					</div>
-					<img src="images/portfolio/thumbnail-small.jpg" alt=" " />
-				</a>
-			</li>			
-			<li class="grid-item item-small">
-				<a href="portfolio-item-2.html">
-					<div class="grid-item-on-hover">
-						<div class="grid-text">
-							<h1>Outdoor Photoshoot</h1>
-						</div>
-						<span>photography, media</span>
-					</div>
-					<img src="images/portfolio/thumbnail-small-2.jpg" alt=" " />
-				</a>
-			</li>				
-			<li class="grid-item marketing webdesign item-wide">
-				<a href="portfolio-item-3.html">
-					<div class="grid-item-on-hover">
-						<div class="grid-text">
-							<h1>Nex7 Workspace</h1>
-						</div>
-						<span>web design, tech</span>
-					</div>
-					<img src="images/portfolio/thumbnail.jpg" alt=" " />
-				</a>
-			</li>					
-			<li class="grid-item 01 item-high">
-				<a href="http://vimeo.com/22439234" title="Timelapse" rel="prettyPhoto">
-					<div class="grid-item-on-hover">
-						<div class="grid-text">
-							<h1>Sea Side Store</h1>
-						</div>
-						<span>retail, marketing</span>
-					</div>
-					<img src="images/portfolio/thumbnail-high.jpg" alt=" " />
-				</a>
-			</li>				
-			<li class="grid-item 01 marketing print item-long">
-				<a href="images/portfolio/its-summer-time.jpg" title="It`s Summer Time" rel="prettyPhoto[pp_gal]">
-					<div class="grid-item-on-hover">
-						<div class="grid-text">
-							<h1>It`s Summer Time</h1>
-						</div>
-						<span>Marketing, Print</span>
-					</div>
-					<img src="images/portfolio/thumbnail-long.jpg" alt="" />
-				</a>
-			</li>
 			
-			<li class="grid-item webdesign marketing print item-small">
-				<a href="images/portfolio/time-is-nothing.jpg" title="Time is Nothing" rel="prettyPhoto[pp_gal]">
-					<div class="grid-item-on-hover">
-						<div class="grid-text">
-							<h1>Time is Nothing</h1>
-						</div>
-						<span>photography</span>
-					</div>
-					<img src="images/portfolio/thumbnail-small-3.jpg" alt="" />
-				</a>
-			</li>		
-
-			<li class="grid-item webdesign marketing print item-wide">
-				<a href="images/portfolio/childhood-memories.jpg" title="Childhood Memories - Project for a Soul" rel="prettyPhoto[pp_gal]">
-					<div class="grid-item-on-hover">
-						<div class="grid-text">
-							<h1>Childhood Memories</h1>
-						</div>
-						<span>media, print</span>
-					</div>
-					<img src="images/portfolio/thumbnail-2.jpg" alt="" />
-				</a>
-			</li>			
-			<li class="grid-item photography item-long">
-				<a href="images/portfolio/maybe-one-day-fashion.jpg" title="Photoshoot for a Fashion Store" rel="prettyPhoto[pp_gal]">
-					<div class="grid-item-on-hover">
-						<div class="grid-text">
-							<h1>Maybe One Day Fashion</h1>
-						</div>
-						<span>photography</span>
-					</div>
-					<img src="images/portfolio/thumbnail-long-2.jpg" alt="" />
-				</a>
-			</li>
-			
-			<li class="grid-item 01 item-long">
-				<a href="portfolio-item-4.html">
-					<div class="grid-item-on-hover">
-						<div class="grid-text">
-							<h1>Gibson Guitars </h1>
-						</div>
-						<span>branding, business cards</span>
-					</div>
-					<img src="images/portfolio/thumbnail-long-3.jpg" alt="" />
-				</a>
-			</li>			
-			
-			<li class="grid-item item-small">
-				<a href="portfolio-item-5.html">
-					<div class="grid-item-on-hover">
-						<div class="grid-text">
-							<h1>Focus Lab</h1>
-						</div>
-						<span>photography, branding</span>
-					</div>
-					<img src="images/portfolio/thumbnail-small-4.jpg" alt="" />
-				</a>
-			</li>			
-		</ul>	
-			
-		<div class="double-space"></div>
-		
-		
-		<h1 class="section-title">Some Fun Facts</h1>
-		
-		<div class="space"></div>
-
-		<div class="counter-wrapper centered-wrapper box fadeInUp">
-			<div class="counter-item">
-				<span class="counter-number" data-from="1" data-to="134" data-speed="2000">134</span>
-				<span class="counter-text">Cups of Coffee</span>
-			</div>	
-
-			<div class="counter-item">
-				<span class="counter-number" data-from="1" data-to="75" data-speed="2000">75</span>
-				<span class="counter-text">Projects Delivered</span>
-			</div>				
-		
-			<div class="counter-item">
-				<span class="counter-number" data-from="1" data-to="28" data-speed="2000">48</span>
-				<span class="counter-text">Satisfied Clients</span>
-			</div>	
-			
-			<div class="counter-item">
-				<span class="counter-number" data-from="1" data-to="12" data-speed="2000">12</span>
-				<span class="counter-text">Winning Awards</span>
-			</div>					
-		</div>
-		
-		<div class="clear"></div>
-		<div class="double-space"></div>
-		
-	</section>		
 
 	
-	<!-- SERVICES SECTION -->
-	<section class="parallax-section" id="services">
-		<div class="lighter-overlay">	
 	
-			<section class="centered-wrapper">	
-		
-				<div class="double-space"></div>
-				
-				<h1 class="section-title">Services</h1>
-				
-				<div class="space"></div>
-				
-				<ul class="homepage-services box fadeInUp">
-					<li class="dt-service-wrapper percent-one-fifth">		
-						<div class="dt-service-item">
-							<i class="fa fa-microphone"></i>
-							<h3 class="service-title">Social Media</h3>
-						</div>
-						<div class="dt-service-hover">
-							<i class="fa fa-microphone"></i>
-							<h3>Social Media</h3>
-							<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-							<p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-						</div>
-					</li>		
-
-					<li class="dt-service-wrapper percent-one-fifth">
-						<div class="dt-service-item">
-							<i class="fa fa-cogs"></i>
-							<h3 class="service-title">Clean Code</h3>
-						</div>
-						<div class="dt-service-hover">
-							<i class="fa fa-cogs"></i>
-							<h3>Clean Code</h3>
-							<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </p>
-							<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.</p>
-						</div>
-					</li>
-
-					<li class="dt-service-wrapper percent-one-fifth">
-						<div class="dt-service-item">
-							<i class="fa fa-camera-retro"></i>
-							<h3 class="service-title">Photography</h3>
-						</div>
-						<div class="dt-service-hover">
-							<i class="fa fa-camera-retro"></i>
-							<h3>Photography</h3>
-							<p>Consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam.</p>
-							<p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.</p>
-						</div>	
-					</li>
-
-					<li class="dt-service-wrapper percent-one-fifth">
-						<div class="dt-service-item">
-							<i class="fa fa-pencil-square-o"></i>
-							<h3 class="service-title">Copywriting</h3>
-						</div>
-						<div class="dt-service-hover">
-							<i class="fa fa-pencil-square-o"></i>
-							<h3>Copywriting</h3>
-							<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum.</p>
-							<p>Deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.</p>
-						</div>	
-					</li>
-
-					<li class="dt-service-wrapper percent-one-fifth column-last">
-						<div class="dt-service-item">
-							<i class="fa fa-clock-o"></i>
-							<h3 class="service-title">Fast Delivery</h3>
-						</div>
-						<div class="dt-service-hover">
-							<i class="fa fa-clock-o"></i>
-							<h3>Fast Delivery</h3>
-							<p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.</p>
-							<p>Vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.</p>
-						</div>	
-					</li>			
-				</ul>
-				
-				<div class="double-space"></div>
-			
-			</section>
-		</div>
-	</section>
 
 	
 	<!-- BLOG SECTION -->
-	<section id="blog" class="centered-wrapper">
+	<!--<section id="blog" class="centered-wrapper">
 			<div class="double-space"></div>
 			
 			<h1 class="section-title">FROM THE BLOG</h1>	
@@ -655,57 +723,10 @@
 		<div class="clear"></div>
 		<div class="space"></div>
 		
-	</section>	
+	</section>-->	
 
 	
-	<!-- TWITTER SECTION -->
-	<section class="parallax-section" id="twitter">
-		<div class="darker-overlay">	
-			<section class="centered-wrapper">
-				<div class="double-space"></div>
-				
-				<h1 class="section-title"><i class="fa fa-twitter"></i></h1>	
-				<div class="half-space"></div>
-				
-				<div class="twitter-carousel box fadeInDown">	
-						<!-- very important -->
-						<div class="tweet"></div>
-				</div><!--end twitter-carousel-->	
-				
-				<div class="double-space"></div>
-			</section>	
-		</div>
-		
-	</section>	
 	
-	
-	<!-- TESTIMONIALS SECTION -->
-	<section id="testimonials" class="clear">
-		<section class="centered-wrapper">
-			<div class="double-space"></div>
-			
-			<h1 class="section-title">Testimonials</h1>	
-			<div class="space"></div>
-			
-			<div class="testimonials-carousel">
-				<div id="owl-testimonials" class="owl-carousel box fadeInDown">		
-					<div class="testimonial-item">
-						<p>“I had the best <a href="#">collaboration ever</a>. I`m very excited about the way that my new website looks. And all because of the awesome guys from Patti Studio.”</p>
-						<p><span class="testimonial-name">JOHN DOE</span>, <span class="testimonial-position">Company CEO</span></p>
-					</div>
-					<div class="testimonial-item">
-						<p>We have been very much impressed by Patti Studio. They grasped our needs and produced a stunning design. Needless to say we are extremely satisfied with the results. Thank you!”</p>
-						<p><span class="testimonial-name">ELENA GONZALES</span>, <span class="testimonial-position">Envato Team</span></p>
-					</div>
-					<div class="testimonial-item">
-						<p>The work they made impressed me on multiple levels. I have been very happy about the whole process and they have done a great job. They was fast to deliver new ideas and always helpful with our questions!”</p>
-						<p><span class="testimonial-name">RICHARD BRENNAN</span>, <span class="testimonial-position">Linda Marketing Team</span></p>
-					</div>				
-				</div>
-			</div><!--end carousel-->	
-			<div class="double-space"></div>
-		</section>
-	</section>
 	
 
 	<!-- CLIENTS SECTION -->
@@ -777,7 +798,7 @@
 			<div class="percent-one-half column-last box fadeInRight">
 				<div id="contactform">
 					<div id="message"></div>
-					<form method="post" action="php/contact.php" name="cform" id="cform">
+					<form method="post"  name="cform" id="cform">
 						<fieldset class="percent-one-half">
 							<input id="name" type="text" name="name" placeholder="Name"/>
 						</fieldset>

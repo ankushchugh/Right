@@ -872,6 +872,12 @@ textarea {
 	float: left;
 }
 
+.login {
+    position:absolute;
+    top:45px;
+    right:20px;
+}
+
 #logoplaceholder {
 position: relative;
 	margin-right: 2%;
@@ -1548,8 +1554,8 @@ h3.service {
 .fullscreenbanner-container .fullscreenbanner #searchCategory	{
 	position:absolute;
     top:50%;
-    width:40%;
-    margin-left:30%;
+    width:50%;
+    margin-left:25%;
     
 }
 
@@ -1587,6 +1593,15 @@ h3.service {
     text-transform: uppercase;
     border: 1px solid #fff;
     font-weight: 700;
+    padding: 20px 30px;
+	text-align: center;
+}
+
+#captionlabel {
+    font-size: 36px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
     padding: 20px 30px;
 	text-align: center;
 }
