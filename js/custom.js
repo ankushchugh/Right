@@ -2,7 +2,7 @@
 	Scripts for Patti HTML - V1.0
 */
 
-$(window).load(function() {	
+$(window).load(function () {
 
 	// Portfolio Gallery Slider
 	$(".portfolio-slider").owlCarousel({
